@@ -8,7 +8,7 @@ public class Button extends Elements {
 
     public Button(By by){ super(by);}
 
-    public void click(){
+    public void singleClick(){
         getDriver().findElement(by).click();
     }
 }

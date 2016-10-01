@@ -8,8 +8,8 @@ public class YouTubeSteps {
 
     public YouTubeSteps search(String text) throws Exception {
         youTubePage.searchInput.fillIn(text);
-        youTubePage.searchButton.click();
-        youTubePage.playlistButton(text).click();
+        youTubePage.searchButton.singleClick();
+        youTubePage.playlistButton(text).singleClick();
         return this;
     }
 }
