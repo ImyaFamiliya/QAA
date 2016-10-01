@@ -1,4 +1,4 @@
-package tests;
+package page;
 
 import elements.Button;
 import elements.TextInput;
@@ -10,4 +10,6 @@ public class LoginPage {
     public Button loginButton = new Button(By.id("next"));
     public TextInput passwordInput = new TextInput(By.id("Passwd"));
     public Button signInButton = new Button(By.id("signIn"));
+    public Button menuButton = new Button(By.xpath("//div[@id='gbwa']"));
+    public Button youTubeButton = new Button(By.xpath("//a[contains(text(), 'Youtube')]"));
 }

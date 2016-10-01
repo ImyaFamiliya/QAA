@@ -1,4 +1,4 @@
-package tests;
+package page;
 
 import elements.Button;
 import elements.TextInput;

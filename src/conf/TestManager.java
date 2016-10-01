@@ -10,14 +10,14 @@ public class TestManager {
     private static WebDriver driver;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeClass
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         getDriver().get("https://www.gmail.com/");
     }
 
-    @AfterClass(alwaysRun = true)
+    @AfterClass
     public void tearDown() throws Exception {
         driver.quit();
         String verificationErrorString = verificationErrors.toString();
